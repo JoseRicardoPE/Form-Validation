@@ -4,11 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.scss">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/0867a49dee.js" crossorigin="anonymous"></script>
     <title>Form Validation</title>
 </head>
 <body>
-    
+    <form action="" class="form">
+        <h2 class="form_title">Form Validation</h2>
+        <div class="form_group form_fullname">
+            <label for="fullname" class="form_label form_label-fullname">Full Name</label>
+            <input type="text" id="fullname" class="form_input form_input-fullname" placeholder="Enter your full name">
+        </div>
+        <div class="form_group form_email">
+            <label for="email" class="form_label form_label-email">Email Address</label>
+            <input type="email" id="email" class="form_input form_input-email" placeholder="Enter your email address">
+        </div>
+        <div class="form_group form_pass">
+            <label for="password" class="form_label form_label-pass">Password</label>
+            <input type="password" id="password" class="form_input form_input-pass" placeholder="Enter your password">
+            <i class="fa-solid fa-eye" id="pass-toggle-btn"></i>
+        </div>
+        <div class="form_group form_date">
+            <label for="date" class="form_label form_label-date">Birth Date</label>
+            <input type="date" id="date" class="form_input form_input-date" placeholder="Select your date">
+        </div>
+        <div class="form_group form_gender">
+            <label for="gender" class="form_label form_label-gender">Gender</label>
+            <select id="gender" class="form_select">
+                <option value="" class="form_select-option">Selected your gender</option>
+                <option value="Male" class="form_select-option">Male</option>
+                <option value="Female" class="form_select-option">Female</option>
+                <option value="Other" class="form_select-option">Other</option>
+            </select>
+        </div>
+        <div class="form_group form_submit-btn">
+            <input type="submit" value="Submit" class="form_input-btn">
+        </div>
+    </form>
 </body>
 </html>
